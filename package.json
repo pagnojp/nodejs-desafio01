@@ -1,0 +1,8 @@
+{
+  "name": "desafio-01",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/pagnojp/nodejs-desafio01.git",
+  "author": "João Pedro Pagno <pagno.jp@gmail.com>",
+  "license": "MIT"
+}
