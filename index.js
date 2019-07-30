@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: false }))
 app.set('view engine', 'njk')
 
 const checkMiddleware = (req, res, next) => {
-  if (!!!req.body.age) {
+  if (!req.body.age) {
     return res.render('new', { emptyAge: true })
   }
   return next()
@@ -25,7 +25,7 @@ app.get('/', (req, res) => {
 })
 
 app.post('/check', checkMiddleware, (req, res) => {
-  let age = req.body.age
+  const age = req.body.age
   if (age >= 18) {
     return res.render('major', { age })
   } else {
